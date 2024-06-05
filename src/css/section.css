@@ -1,0 +1,11 @@
+.section {
+  margin-bottom: 80px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 124px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 164px;
+  }
+}

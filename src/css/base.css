@@ -1,0 +1,51 @@
+* {
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  background-color: var(--color-body);
+  color: var(--color-black);
+  overflow-x: clip;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 360px) {
+    max-width: 360px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: var(--container);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
